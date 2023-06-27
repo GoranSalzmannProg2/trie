@@ -1,0 +1,53 @@
+trie>
+Error! Not a valid command.
+trie> test
+Error! Not a valid command.
+trie> help
+Allowed Commands:
+new: empties the Trie.
+add <n> <p>: adds a new entry for <n> with value <p>.
+change <n> <p>: changes the value for <n> to <p>.
+delete <n>: removes the entry for <n> from the trie.
+points <n>: prints the value for <n> to the console.
+trie <n>: prints the whole trie in a one-line format.
+help: shows a dialog containing all valid commands.
+quit: stops the program from executing further.
+trie> new abc
+trie> add 678 50
+Error! You need to specify a valid name.
+trie> add Hans 60
+Error! You need to specify a valid name.
+trie> add hans abc
+Error! You need to specify a valid number.
+trie> add
+Error! Not enough arguments.
+trie> add hans
+Error! Not enough arguments.
+trie> add 890
+Error! Not enough arguments.
+trie>
+Error! Not a valid command.
+trie> a d d
+Error! Not a valid command.
+trie> 89 hans 5
+Error! Not a valid command.
+trie> add          hans 6
+trie> add hans 6
+Error! Could not be added!
+trie> remove hans
+Error! Not a valid command.
+trie> delete hans
+trie> change hans
+Error! Not enough arguments.
+trie> change hans 6
+Error! Could not be changed!
+trie> add hans 5
+trie> change hans
+Error! Not enough arguments.
+trie> change hans 6
+trie> remove hans
+Error! Not a valid command.
+trie> delete hans
+trie> delete hans
+Error! Could not be removed!
+trie>
